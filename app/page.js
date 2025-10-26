@@ -11,8 +11,8 @@ export default function Home() {
         <p>Bridging Hearts – Help Through Donations or Volunteering and Spread Hope to Those in Need. Start now!</p>
         <div className="">
           
-          <button type="button" class="text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Here</button>
-          <button type="button" class="text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read More</button>
+          <button type="button" className="text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Here</button>
+          <button type="button" className="text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read More</button>
         
         </div>
     </div>
