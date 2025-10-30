@@ -1,7 +1,14 @@
 "use client"
 import React from 'react'
 import { useSession } from "next-auth/react"
+import Donation_history from '../Donation_history/page'
+import Donate from '../Donate/page';
 
+ const donations = [
+    { amount: 3000, date: "2025-12-31" },
+    { amount: 2000, date: "2025-11-15" },
+    { amount: 1000, date: "2025-10-25" },
+  ];
 const Username = ({ params }) => {
   const { data: session, status } = useSession()
 
@@ -47,11 +54,17 @@ const Username = ({ params }) => {
         )}
         <div className="mt-16 ml-4">
           <p className="text-4xl font-bold">{session.user?.name}</p>
-          <p className="text-[16px] text-gray-300 ">100 follower . 20 following</p>
-          <p className="text-[16px] text-gray-300">Donated 121 times</p>
+          <p className="text-[16px] text-gray-300">Donater . Donated 121 times</p>
+          <p className="text-[16px] text-gray-300">100 follower . 20 following</p>
+       
         </div> 
         </div>
+
       </div>
+       </div>
+       <div className="absolute right-0 p-4">
+         <Donation_history donations={donations} />
+         <Donate/>
        </div>
     </div>
   )
