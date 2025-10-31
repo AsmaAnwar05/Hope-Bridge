@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 
-
 const Donation_history = ({donations}) => {
   const [showHistory, setShowHistory] = useState(false);
 

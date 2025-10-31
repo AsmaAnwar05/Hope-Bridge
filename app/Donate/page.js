@@ -21,7 +21,7 @@ export default function Donate() {
       <ul className=" space-y-2">
         {categories.map((catagory) => (
           <li key={catagory} className="font-semibold border rounded cursor-pointer hover:bg-slate-800 p-2">
-            <Link href={`/donate/${catagory.toLowerCase()}`}>{catagory}</Link>
+            <Link href={`/Donate/${catagory.toLowerCase()}`} target="_blank">{catagory}</Link>
           </li>
         ))}
       </ul>

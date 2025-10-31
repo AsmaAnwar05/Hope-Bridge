@@ -17,23 +17,23 @@ const Fund = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-10 p-6 border rounded shadow-lg">
+    <div className="w-fit mx-auto mt-10 p-6 border rounded shadow-lg bg-gray-900">
       <h1 className="text-2xl font-bold mb-4">Fund Donation</h1>
 
-      <label className="block mt-2 mb-1">Amount (Tk):</label>
+      <label className="block mt-2 mb-1 font-medium">Amount (Tk):</label>
       <input
         type="number"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
-        className="border p-2 rounded w-full"
+        className="border p-2 rounded w-full text-slate-900"
         placeholder="Enter amount"
       />
 
-      <label className="block mt-4 mb-1">Payment Method:</label>
+      <label className="block mt-4 mb-1 font-medium">Payment Method:</label>
       <select
         value={paymentMethod}
         onChange={(e) => setPaymentMethod(e.target.value)}
-        className="border p-2 rounded w-full"
+        className="border p-2 rounded w-full text-slate-800"
       >
         <option value="">Select Payment Method</option>
         <option value="cash">Cash</option>
@@ -43,8 +43,7 @@ const Fund = () => {
 
       <button
         onClick={handleDonate}
-        className="mt-6 bg-blue-500 text-white font-bold p-2 rounded w-full hover:bg-blue-600"
-      >
+        type="button" className="text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 text-sm px-5 py-2.5 text-center me-2 mb-2  mt-6 font-bold p-2 rounded w-full" >
         Donate
       </button>
     </div>
