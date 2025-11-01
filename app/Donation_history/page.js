@@ -29,7 +29,7 @@ const Donation_history = ({donations}) => {
             <span>
               Date:{" "}
               {new Date(donation.date).toLocaleDateString("en-GB")} 
-              {" "}Donated {donation.amount} tk
+              {" "}Donated <span className="font-bold">{donation.amount} tk</span> 
             </span>
           </li>
         ))}

@@ -38,7 +38,7 @@ const Fund = () => {
         <option value="">Select Payment Method</option>
         <option value="cash">Cash</option>
         <option value="mobile">Mobile Banking</option>
-        <option value="card">Card</option>
+        <option value="card">Bank Transfer</option>
       </select>
 
       <button

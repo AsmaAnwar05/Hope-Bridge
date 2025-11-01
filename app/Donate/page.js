@@ -17,14 +17,23 @@ export default function Donate() {
           {showCatagory ? "▲ Hide" : "▼ Show"}
         </span></h1>
         {showCatagory &&(
-             <div className="donation-box w-fit bg-gray-900 p-3 rounded-lg absolute z-50">
-      <ul className=" space-y-2">
-        {categories.map((catagory) => (
-          <li key={catagory} className="font-semibold border rounded cursor-pointer hover:bg-slate-800 p-2">
-            <Link href={`/Donate/${catagory.toLowerCase()}`} target="_blank">{catagory}</Link>
-          </li>
-        ))}
-      </ul>
+             <div className="donation-box w-full bg-gray-900 p-3 rounded-lg absolute z-50">
+     <ul className="space-y-2">
+  {categories.map((category) => (
+    <li 
+      key={category} 
+      className="font-semibold border rounded hover:bg-slate-800 cursor-pointer p-2"
+    >
+      <Link 
+        href={`/Donate/${category.toLowerCase()}`} 
+        target="_blank"
+        className="block w-full h-full"
+      >
+        {category}
+      </Link>
+    </li>
+  ))}
+</ul>
       </div>
         )}
     </div>
